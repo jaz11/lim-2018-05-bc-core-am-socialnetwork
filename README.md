@@ -2,7 +2,7 @@
 
 El producto socilitado por la cliente es una red social, de las opciones temáticas para desarrollar el producto escogimos realizar una red social de alimentación, nos enfocaremos principalmente en conocer la experiencia de las personas en los lugares a los que suelen acudir cuando tienen antojitos.
 
-El nombre propuesto es 'Dime tu point' / 'Huari ¿qué?' /  Punto escondido   
+El nombre propuesto es 'Dime tu point' / 'Wari ¿qué?' /  Punto escondido   
 
 " La palabra huarique (o warique) es un vocablo quechua que proviene de dos palabras, la primera es 'wa', la cual era utilizada para referirse a algo que no se entiende, que no se conoce o que esta escondido. La segunda palabra es 'rique', la cual deriva de la palabra 'rocqro' que significa guiso. Haciendo el ejercicio de unirlas se podría decir que warique es un lugar escondido donde se hacen guisos.  (Fuente: Martha Hildebrant)
 
@@ -14,6 +14,7 @@ Fuente: [yumi.pe](http://www.yumi.pe/que-significa-huarique/)
 
 
 ## Cuáles son los elementos básicos que tiene una red social.
+
 
 ## Quiénes son los principales usuarios de producto.
 
