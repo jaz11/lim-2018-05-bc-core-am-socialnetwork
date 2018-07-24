@@ -19,17 +19,22 @@
 
     <main>
         <div class="container">
-          <section>
-            <h2 class="main row">Crea una cuenta</h2>
-            <p class="col-md-5">1. Choose how you want to log in to your account</p>
-            <div>
-                <p class="row">Sign up with Email (check)</p>
-                <input id="userSpace" type="text" placeholder="Ingresa un usuario"  class="row"/>
-                <input id="emailSpace" type="email" placeholder="Ingresa tu correo"  class="row"/>
-                <input id="passwordSpace" type="password" placeholder="Ingresa tu clave" class="row"/>
-            </div>
-            <div></div>
-          </section>  
+            <section>
+                <h2 class="main row">Crea una cuenta</h2>
+                <p class="col-md-5">1. Choose how you want to log in to your account</p>
+                <div>
+                    <p class="row">Regístrate con un correo</p>
+                    <input id="userSpace" type="text" placeholder="Ingresa un usuario" class="row" />
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Ingresa tu correo" class="row" />
+                    <label for="password">password</label>
+                    <input id="password" type="password" placeholder="Ingresa tu clave" class="row" />
+                </div>
+                <div>
+                    <input type="button" id="register" value="Register" />
+                    <input type="button" id="btnSignin" value="signin" />
+                </div>
+            </section>
         </div>
     </main>
 

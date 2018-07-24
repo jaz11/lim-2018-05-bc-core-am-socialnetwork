@@ -2,7 +2,7 @@
 
 El producto socilitado por la cliente es una red social, de las opciones temáticas para desarrollar el producto escogimos realizar una red social de alimentación, nos enfocaremos principalmente en conocer la experiencia de las personas en los lugares a los que suelen acudir cuando tienen antojitos.
 
-![WariQué](https://thumb.ibb.co/g07vR8/Logo.png)
+![WariQué](https://image.ibb.co/jqs6Yo/Logo.png)
 
 El nombre elegido es [Wari ¿qué?](https://www.figma.com/proto/RZ0tWEcYIf6hfsMQWWf1dQmA/Social-Neetwork?node-id=19%3A2&scaling=scale-down) porque los wariques son lugares escondidos donde se suele comer rico y se llega por recomendaciones, además tomamos en cuenta la siguiente definición:
 
@@ -14,12 +14,12 @@ Fuente: [yumi.pe](http://www.yumi.pe/que-significa-huarique/)
 
 El prototipo de baja fidelidad realizado por el equipo:
 
-![Prototipo de baja fidelidad](https://thumb.ibb.co/cB1YDo/prototipo_baja.jpg)
+![Prototipo de baja fidelidad](https://preview.ibb.co/mSatDo/prototipo_baja.jpg)
 
 El prototipo de alta fidelidad está siendo realizado en [Figma](https://www.figma.com/file/RZ0tWEcYIf6hfsMQWWf1dQmA/Social-Network?node-id=9%3A1)
 
-![Prototipo de alta fidelidad](https://thumb.ibb.co/hwktDo/primera_vista.png)
-![Prototipo de alta fidelidad 2](https://thumb.ibb.co/j2HUm8/segunda_vista.png)
+![Prototipo de alta fidelidad](https://preview.ibb.co/fO9Lto/primera_vista.png)
+![Prototipo de alta fidelidad 2](https://preview.ibb.co/njLh68/segunda_vista.png)
 
 ## Cuáles son los elementos básicos que tiene una red social.
 
