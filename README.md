@@ -2,6 +2,8 @@
 
 El producto socilitado por la cliente es una red social, de las opciones temáticas para desarrollar el producto escogimos realizar una red social de alimentación, nos enfocaremos principalmente en conocer la experiencia de las personas en los lugares a los que suelen acudir cuando tienen antojitos.
 
+![WariQué](https://thumb.ibb.co/g07vR8/Logo.png)
+
 El nombre elegido es [Wari ¿qué?](https://www.figma.com/proto/RZ0tWEcYIf6hfsMQWWf1dQmA/Social-Neetwork?node-id=19%3A2&scaling=scale-down) porque los wariques son lugares escondidos donde se suele comer rico y se llega por recomendaciones, además tomamos en cuenta la siguiente definición:
 
 + "La palabra huarique (o warique) es un vocablo quechua que proviene de dos palabras, la primera es 'wa', la cual era utilizada para referirse a algo que no se entiende, que no se conoce o que esta escondido. La segunda palabra es 'rique', la cual deriva de la palabra 'rocqro' que significa guiso. Haciendo el ejercicio de unirlas se podría decir que warique es un lugar escondido donde se hacen guisos.  (Fuente: Martha Hildebrant). 
@@ -12,11 +14,12 @@ Fuente: [yumi.pe](http://www.yumi.pe/que-significa-huarique/)
 
 El prototipo de baja fidelidad realizado por el equipo:
 
-![Prototipo de baja fidelidad](../img/primera-vista)
+![Prototipo de baja fidelidad](https://thumb.ibb.co/cB1YDo/prototipo_baja.jpg)
 
 El prototipo de alta fidelidad está siendo realizado en [Figma](https://www.figma.com/file/RZ0tWEcYIf6hfsMQWWf1dQmA/Social-Network?node-id=9%3A1)
 
-![Prototipo de alta fidelidad](../img/segunda-vista)
+![Prototipo de alta fidelidad](https://thumb.ibb.co/hwktDo/primera_vista.png)
+![Prototipo de alta fidelidad 2](https://thumb.ibb.co/j2HUm8/segunda_vista.png)
 
 ## Cuáles son los elementos básicos que tiene una red social.
 
