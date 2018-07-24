@@ -10,6 +10,13 @@ El nombre elegido es [Wari ¿qué?](https://www.figma.com/proto/RZ0tWEcYIf6hfsMQ
 
 Fuente: [yumi.pe](http://www.yumi.pe/que-significa-huarique/)
 
+El prototipo de baja fidelidad realizado por el equipo:
+
+![Prototipo de baja fidelidad](../img/primera-vista)
+
+El prototipo de alta fidelidad está siendo realizado en [Figma](https://www.figma.com/file/RZ0tWEcYIf6hfsMQWWf1dQmA/Social-Network?node-id=9%3A1)
+
+![Prototipo de alta fidelidad](../img/segunda-vista)
 
 ## Cuáles son los elementos básicos que tiene una red social.
 
