@@ -2,13 +2,11 @@
 
 El producto socilitado por la cliente es una red social, de las opciones temáticas para desarrollar el producto escogimos realizar una red social de alimentación, nos enfocaremos principalmente en conocer la experiencia de las personas en los lugares a los que suelen acudir cuando tienen antojitos.
 
-El nombre propuesto es 'Dime tu point' / 'Wari ¿qué?' /  Punto escondido   
+El nombre elegido es [Wari ¿qué?](https://www.figma.com/proto/RZ0tWEcYIf6hfsMQWWf1dQmA/Social-Neetwork?node-id=19%3A2&scaling=scale-down) porque los wariques son lugares escondidos donde se suele comer rico y se llega por recomendaciones, además tomamos en cuenta la siguiente definición:
 
-" La palabra huarique (o warique) es un vocablo quechua que proviene de dos palabras, la primera es 'wa', la cual era utilizada para referirse a algo que no se entiende, que no se conoce o que esta escondido. La segunda palabra es 'rique', la cual deriva de la palabra 'rocqro' que significa guiso. Haciendo el ejercicio de unirlas se podría decir que warique es un lugar escondido donde se hacen guisos.  (Fuente: Martha Hildebrant)
-
-Es por eso que muchos conocedores del buen comer (llamados también sibaritas y gastrónomos) han venido usando el término huarique. Ahora se entiende el porque son lugares poco conocidos pero donde comer es una experiencia única.
-
-Cabe recalcar que la mayoría de huariques tienen fama de ser económicos. En la mayoría de casos esto se aplica pero en otros el precio esta a la par de los más reconocidos restaurantes gourmets. Paga el que sabe comer. "
++ "La palabra huarique (o warique) es un vocablo quechua que proviene de dos palabras, la primera es 'wa', la cual era utilizada para referirse a algo que no se entiende, que no se conoce o que esta escondido. La segunda palabra es 'rique', la cual deriva de la palabra 'rocqro' que significa guiso. Haciendo el ejercicio de unirlas se podría decir que warique es un lugar escondido donde se hacen guisos.  (Fuente: Martha Hildebrant). 
+- Es por eso que muchos conocedores del buen comer (llamados también sibaritas y gastrónomos) han venido usando el término huarique. Ahora se entiende el porque son lugares poco conocidos pero donde comer es una experiencia única.
+- Cabe recalcar que la mayoría de huariques tienen fama de ser económicos. En la mayoría de casos esto se aplica pero en otros el precio esta a la par de los más reconocidos restaurantes gourmets. Paga el que sabe comer. "
 
 Fuente: [yumi.pe](http://www.yumi.pe/que-significa-huarique/)
 
@@ -19,16 +17,26 @@ Fuente: [yumi.pe](http://www.yumi.pe/que-significa-huarique/)
 ## Quiénes son los principales usuarios de producto.
 
 ## Cómo descubriste las necesidades de los usuarios.
+A través de entrevistas, se le preguntó a los usuarios lo siguiente:
+- Si se te antoja comer algún tipo de comida ¿tienes dónde buscar un lugar recomendado?
+- Si conoces un buen lugar para comer, ¿lo recomendarías?
+- ¿Cuántas veces has ido a un warique solo para probar?
 
 ## Qué problema resuelve el producto para estos usuarios.
+Las personas siemre estamos buscando un buen lugar para comer, ya sea para invitar a la familia o por un simple antojo, pero muchas veces no sabemos a dónde ir. Con esta red social permitiremos que las personas puedan expresarse y recomendar los wariques y restaurantes que visiten a través de publicaciones personales y/o valorando las publicaciones de los demás usuarios.
 
 ## Cuáles son los objetivos de estos usuarios en relación con el producto.
 
+El principal objetivo es compartir información.
+
 ## Cuáles son las principales funcionalidades del producto y cuál es su prioridad.
+
+La prioridad del producto es recomendar lugares para comer.
 
 ## Cómo verificaste que el producto les está resolviendo sus problemas.
 
 ## Cómo te asegurarás que estos usuarios usen este producto.
+
 
 
 ## Checklist
@@ -42,15 +50,15 @@ Fuente: [yumi.pe](http://www.yumi.pe/que-significa-huarique/)
 * [ ] Definición del producto:
   * [ ] Cuáles son los elementos básicos que tiene una red social.
   * [ ] Quiénes son los principales usuarios de producto.
-  * [ ] Cómo descubriste las necesidades de los usuarios.
-  * [ ] Qué problema resuelve el producto para estos usuarios.
-  * [ ] Cuáles son los objetivos de estos usuarios en relación con el producto.
+  * [x] Cómo descubriste las necesidades de los usuarios.
+  * [x] Qué problema resuelve el producto para estos usuarios.
+  * [x] Cuáles son los objetivos de estos usuarios en relación con el producto.
   * [ ] Cuáles son las principales funcionalidades del producto y cuál es su prioridad.
   * [ ] Cómo verificaste que el producto les está resolviendo sus problemas.
   * [ ] Cómo te asegurarás que estos usuarios usen este producto.
 * [ ] Benchmark de las principales redes sociales.
 * [ ] Resumen de entrevistas con usuarios.
-* [ ] Link/screenshots del prototipo de alta fidelidad.
+* [x] Link/screenshots del prototipo de alta fidelidad.
 * [ ] Conclusiones de testing con el prototipo de alta fidelidad con usuarios.
 * [ ] Conclusiones de testing con el producto en HTML.
 
