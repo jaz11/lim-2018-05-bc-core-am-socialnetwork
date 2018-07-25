@@ -20,26 +20,31 @@
     <main>
         <div class="container">
             <section>
-                <h2 class="main row">Crea una cuenta</h2>
-                <p class="col-md-5">1. Choose how you want to log in to your account</p>
-                <div>
+                <div id="logout" class="hiden">
+                    <p id="user-name"></p>
+                    <input type="button" id="btnLogout" value="Logout" />
+                </div>
+                <div id="login">
+                    <h2 class="main row">Crea una cuenta</h2>
+                    <p class="col-md-5">1. Choose how you want to log in to your account</p>
+
                     <p class="row">Regístrate con un correo</p>
-                    <input id="userSpace" type="text" placeholder="Ingresa un usuario" class="row" />
+                    <label for="user">usuario</label>
+                    <input id="user" type="text" placeholder="Ingresa un usuario" class="row" />
                     <label for="email">Email</label>
                     <input id="email" type="email" placeholder="Ingresa tu correo" class="row" />
                     <label for="password">password</label>
                     <input id="password" type="password" placeholder="Ingresa tu clave" class="row" />
-                </div>
-                <div>
                     <input type="button" id="register" value="Register" />
                     <input type="button" id="btnSignin" value="signin" />
+                    <input type="button" id="btnGoogle" value="Google" />
                 </div>
             </section>
         </div>
     </main>
 
     <footer>
-
+        <p>Proyecto desarrollado por Jahzell y Kalu</p>
     </footer>
 
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
