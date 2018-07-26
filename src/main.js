@@ -6,10 +6,36 @@ const password = document.getElementById("password");
 const btnRegister = document.getElementById("register");
 const btnLogout = document.getElementById("btnLogout"); 
 const btnSignin = document.getElementById("btnSignin");
-const btnGoogle = document.getElementById("btnGoogle");
+const googleButton = document.getElementById("google-button");
 
+var config = {
+    apiKey: "AIzaSyC1K9LkUQyl4cVah4hXkQ6CINmg9Zd_kZI",
+    authDomain: "warique-88140.firebaseapp.com",
+    databaseURL: "https://warique-88140.firebaseio.com",
+    projectId: "warique-88140",
+    storageBucket: "warique-88140.appspot.com",
+    messagingSenderId: "399831724179"
+};
+firebase.initializeApp(config);
 
-window.onload = () => {
+// Registro con Google 
+googleButton.addEventListener ('click', () => {
+// Using a popup.
+var provider = new firebase.auth.GoogleAuthProvider();
+provider.addScope('profile');
+provider.addScope('email');
+firebase.auth().signInWithPopup(provider).then(function(result) {
+ // This gives you a Google Access Token.
+ var token = result.credential.accessToken;
+ // The signed-in user info.
+ var user = result.user;
+ var credential = firebase.auth.GoogleAuthProvider.credential(
+    googleUser.getAuthResponse().id_token);
+firebase.auth().signInWithCredential(credential)
+});
+})
+
+window.onload = () => { 
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
             login.classList.remove("hiden");
@@ -52,25 +78,7 @@ btnLogout.addEventListener('click', () => {
         console.log('error al cerrar sesión');
     });
 })
-// sesion con Google
-btnGoogle.addEventListener ('click', () => {
-    var provider = new firebase.auth.GoogleAuthProvider();
-    provider.setCustomParameters ({
-        display: 'popup'
-    });
-    firebase.auth().signInWithPopup(provider)
-    .then(function(result) {
-       console.log('sesión con Google')
-       var user = result.user;
-       writeUserData(user.uid, user.displayName, user.email, user.photoURL);
-      }).catch(function(error) {
-        console.log(error.code);
-        console.log(error.message);
-        console.log(error.email);
-        console.log(error.credential);
-        
-      });
-})
+
 
 
 // let hereCallJS = document.getElementById('HereCall');
