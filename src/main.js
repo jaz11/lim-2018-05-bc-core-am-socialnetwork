@@ -23,7 +23,8 @@ window.onload = () => {
     });
 }
 
-register.addEventListener('click', () => {
+
+btnRegister.addEventListener('click', () => {
     firebase.auth().createUserWithEmailAndPassword(email.value, password.value)
         .then(function () {
             console.log('se creo e usuario')
@@ -72,6 +73,7 @@ btnGoogle.addEventListener ('click', () => {
       });
 })
 
+// btnRegister.addEventListener('click', registerUser)
 
 // let hereCallJS = document.getElementById('HereCall');
 // let refData = firebase.dataBase().ref().child('text');
@@ -82,3 +84,45 @@ btnGoogle.addEventListener ('click', () => {
 // function registrar () {
 //     console.log('funciona el click');
 // }
+
+
+// pruebas de enlazar FB
+FB.getLoginStatus.
+
+
+FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});
+
+
+{
+    status: 'connected';
+    authResponse: {
+        accessToken: '...';
+        expiresIn:'...';
+        signedRequest:'...';
+        userID:'...';
+    }
+}
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '{your-app-id}',
+      cookie     : true,
+      xfbml      : true,
+      version    : '{api-version}'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
