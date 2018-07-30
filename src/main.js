@@ -87,8 +87,6 @@ registerButton.addEventListener('click', () => {
     firebase.auth().createUserWithEmailAndPassword(email.value, password.value)
         .then( () => {
             console.log('se creo el usuario');
-            // const postPage = document.createElement('section');
-            // postPage.id('post-page');
         })
         .catch( (error) => {
             console.log(error.code, error.message);
@@ -117,15 +115,3 @@ logOutButton.addEventListener('click', () => {
         console.log('error al cerrar sesión');
     });
 })
-
-
-
-// let hereCallJS = document.getElementById('HereCall');
-// let refData = firebase.dataBase().ref().child('text');
-// refData.on('value', snap => hereCallJS.innerText = snap.val());
-
-// let clickButtom = document.getElementById('buttonLogIn');
-
-// function registrar () {
-//     console.log('funciona el click');
-// }
