@@ -14,12 +14,21 @@ Fuente: [yumi.pe](http://www.yumi.pe/que-significa-huarique/)
 
 El prototipo de baja fidelidad realizado por el equipo:
 
-![Prototipo de baja fidelidad](https://preview.ibb.co/mSatDo/prototipo_baja.jpg)
+![Vista login](img/vistas/login.jpeg)
+![Vista register](img/vistas/registrarse.jpeg)
+![Vista choose](img/vistas/elige.jpeg)
+![Vista feed](img/vistas/feed.jpeg)
+![Vista wall](img/vistas/wall.jpeg)
+![Vista notificaciones](img/vistas/notificaciones.jpeg)
+![Vista perfil](img/vistas/perfil.jpeg)
 
-El prototipo de alta fidelidad está siendo realizado en [Figma](https://www.figma.com/file/RZ0tWEcYIf6hfsMQWWf1dQmA/Social-Network?node-id=9%3A1)
+El prototipo de alta fidelidad se realizó en [Figma](https://www.figma.com/file/RZ0tWEcYIf6hfsMQWWf1dQmA/Social-Network?node-id=9%3A1) donde consideramos las vistas a considerar para la presentacion del proyecto.
 
-![Prototipo de alta fidelidad](https://preview.ibb.co/fO9Lto/primera_vista.png)
-![Prototipo de alta fidelidad 2](https://preview.ibb.co/njLh68/segunda_vista.png)
+- Vista en móvil
+![Vista web](img/vista-movil.png)
+
+- Vista en web
+![Vista web](img/vista-web.png)
 
 ## Cuáles son los elementos básicos que tiene una red social.
 
