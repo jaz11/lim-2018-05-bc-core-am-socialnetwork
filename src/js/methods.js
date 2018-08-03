@@ -1,9 +1,3 @@
-//SignIn variables
-const googleButton = document.getElementById('google-button');
-const facebookButton = document.getElementById('facebook-button');
-const emailSignIn = document.getElementById('email-signin');
-const passwordSignIn = document.getElementById('password-signin');
-const signInButton = document.getElementById('sign-in-button');
 //SignUp variables
 const nameSignUp = document.getElementById('name-signup');
 const userSignUp = document.getElementById('user-signup');
@@ -11,17 +5,14 @@ const emailSignUp = document.getElementById('email-signup');
 const passwordSignUp = document.getElementById('password-signup');
 const passwordValidation = document.getElementById('password-validation');
 const registerButton = document.getElementById('register');
+//SignIn variables
+const googleButton = document.getElementById('google-button');
+const facebookButton = document.getElementById('facebook-button');
+const emailSignIn = document.getElementById('email-signin');
+const passwordSignIn = document.getElementById('password-signin');
+const signInButton = document.getElementById('sign-in-button');
 
 
-let config = {
-    apiKey: 'AIzaSyC1K9LkUQyl4cVah4hXkQ6CINmg9Zd_kZI',
-    authDomain: 'warique-88140.firebaseapp.com',
-    databaseURL: 'https://warique-88140.firebaseio.com',
-    projectId: 'warique-88140',
-    storageBucket: 'warique-88140.appspot.com',
-    messagingSenderId: '399831724179'
-};
-firebase.initializeApp(config);
 
 
 //Creating a function to show the users in fireBase
@@ -39,9 +30,9 @@ const htmlCall = () => {
 };
 
 //EMAIL register
-registerButton.addEventListener('click', () => {
-    const callbackRegister = (error, result) => {
-        if (error) {
+registerButton.addEventListener('click', () => { 
+    const cb = (error, result) => {
+        if(error) {
             console.log(error.code, error.message);
         } else {
             alert('¡Usuario Registrado Exitosamente!');
@@ -51,9 +42,17 @@ registerButton.addEventListener('click', () => {
             htmlCall();
         }
     }
-    signUp(emailSignUp.value, passwordSignUp.value, callbackRegister)
+    registrar(emailSignUp.value, passwordSignUp.value, cb);
+
 });
 
+// //Function to confirm the password
+// const passwordConfirm = () => {
+//     let password = document.getElementById('new-password');
+//     if (password === passwordValidation) {
+//         let
+//     }
+// }
 
 ///////////////////////////////////Métodos de Inicio de Sesión///////////////////////////////////
 
