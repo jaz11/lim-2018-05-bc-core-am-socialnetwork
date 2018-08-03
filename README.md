@@ -75,6 +75,18 @@ Adicionalmente realizaremos una campa de difusión en redes sociales (Twitter, F
 
 ## Benchmark de las principales redes sociales
 
+**Love my salad**
+
+Es una red social de ensaladas que tiene blogs, trucos y consejos, pero sobre todo una sección de recetas en donde al introducir el nombre de cada insumo, la web retorna tips de cómo preparalo, cómo comprarlo, cómo conservarlo y cómo servirlo.
+
+![love_my_salad.png](img/love_my_salad.png)
+
+**Come con Salud**
+
+Es una web de nutrición adaptada a un público general que tiene como contenido notas e informes acerca de la alimentación para adelgazar, remedios naturales, recetas de cocina saudable, consejos y trucos, todo en ayuda de un estilo de vida saludable.
+
+![come_con_salud.png](img/come_con_salud.png)
+
 ## Resumen de entrevistas con usuarios
 
 
