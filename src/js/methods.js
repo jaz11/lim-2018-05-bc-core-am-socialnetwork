@@ -13,17 +13,6 @@ const passwordSignIn = document.getElementById('password-signin');
 const signInButton = document.getElementById('sign-in-button');
 
 
-
-
-//Creating a function to show the users in fireBase
-const writeUserData = (userId, name, email, imageURL) => {
-    firebase.database().ref('users/' + userId).set({
-        username: name,
-        email: email,
-        profile_picture: imageURL,
-    });
-}
-
 //Function to call the other HTML where's the main page of the app
 const htmlCall = () => {
     window.location.assign('mainpage.html');
@@ -42,7 +31,8 @@ registerButton.addEventListener('click', () => {
             htmlCall();
         }
     }
-    registrar(emailSignUp.value, passwordSignUp.value, cb);
+
+    signUp(emailSignUp.value, passwordSignUp.value, cb);
 
 });
 
@@ -58,7 +48,7 @@ registerButton.addEventListener('click', () => {
 
 //EMAIL LogIn button 
 signInButton.addEventListener('click', () => {
-    const callbackSignIn = (error, result) => {
+    const cb = (error, result) => {
         if (error) {
             console.log(error.code, error.message);
         } else {
@@ -66,14 +56,17 @@ signInButton.addEventListener('click', () => {
             htmlCall();
         }
     }
-    signIn(emailSignIn.value, passwordSignIn.value, callbackSignIn)
+
+    signIn(emailSignIn.value, passwordSignIn.value, cb);
+
 });
 
 //GOOGLE LogIn button 
 
 
 googleButton.addEventListener('click', () => {
-    const callbackGoogle = (error, result) => {
+    let provider;
+    const cb = (error, result) => {
         if (error) {
             console.log(error.code);
             console.log(error.message);
@@ -86,12 +79,15 @@ googleButton.addEventListener('click', () => {
             htmlCall();
         }
     }
-    google(provider, callbackGoogle)
+
+    signInGoogle(provider, cb);
+
 });
 
 //FACEBOOK LogIn button
 facebookButton.addEventListener('click', () => {
-    const callbackFacebook = (error, result) => {
+    let provider;
+    const cb = (error, result) => {
         if (error) {
             console.log(error.code);
             console.log(error.message);
@@ -105,8 +101,10 @@ facebookButton.addEventListener('click', () => {
             htmlCall();
         }
     }
-    facebook(provider, callbackFacebook);
-})
+
+    signInFacebook(provider, cb);
+
+});
 
 
 // facebookButton.addEventListener('click', () => {

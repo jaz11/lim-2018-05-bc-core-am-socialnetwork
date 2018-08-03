@@ -1,45 +1,59 @@
-window.signUp = (email, password, callbackRegister) => {
+//Creating a function to show the users in fireBase
+window.writeUserData = (userId, name, email, imageURL) => {
+    firebase.database().ref('users/' + userId).set({
+        username: name,
+        email: email,
+        profile_picture: imageURL,
+    });
+}
+
+window.signUp = (email, password, cb) => {
     firebase.auth().createUserWithEmailAndPassword(emailSignUp.value, passwordSignUp.value)
         .then((result) => {
-            callbackRegister(null, result);
+            cb(null, result);
         })
         .catch((error) => {
-            callbackRegister(error);
+            cb(error);
         })
 }
 
-window.signIn = (email, password, callbackSignIn) => {
+window.signIn = (email, password, cb) => {
     firebase.auth().signInWithEmailAndPassword(emailSignIn.value, passwordSignIn.value)
         .then((result) => {
-            callbackSignIn(null, result);
+            cb(null, result);
         })
         .catch((error) => {
-            callbackSignIn(error);
+            cb(error);
         });
 }
-window.google = (provider, callbackGoogle) => {
-    let provider = new firebase.auth.GoogleAuthProvider();
+
+window.signInGoogle = (provider, cb) => {
+    provider = new firebase.auth.GoogleAuthProvider();
     provider.setCustomParameters({
         'display': 'popup'
     });
     firebase.auth().signInWithPopup(provider)
         .then((result) => {
-            callbackGoogle(null, result);
+            cb(null, result);
         })
         .catch((error) => {
-            callbackGoogle(error);
+            cb(error);
         })
 };
-window.facebook = () => {
+
+window.signInFacebook = (provider, cb) => {
+    provider = new firebase.auth.FacebookAuthProvider();
+    provider.setCustomParameters({
+        'display': 'popup'
+    });
     firebase.auth().signInWithPopup(provider)
         .then((result) => {
-            // var user = result.user;
-            callbackFacebook(null, result)
+            cb(null, result);
         })
         .catch((error) => {
-            callbackFacebook(error)
+            cb(error);
         })
-}
+};
 
 
 // //Function to confirm the password
