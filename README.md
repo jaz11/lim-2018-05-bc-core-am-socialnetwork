@@ -75,6 +75,16 @@ Adicionalmente realizaremos una campa de difusión en redes sociales (Twitter, F
 
 ## Benchmark de las principales redes sociales
 
+- Sección de Gastronomía de [El Comercio](https://elcomercio.pe/noticias/gastronomia)
+
+En esta sección realizan galerías de sitios donde podemos ir a comer un determinado platillo, visitar en una ruta, eventos gastronómicos.
+![gastronomía EC](img/EC-gastro.png)
+
+- [El Trinche](http://www.eltrinche.com/)
+
+Es una plataforma web que recomienda restaurantes, tiene blogeros colaboradores.
+![trinche](img/trinche.png)
+
 ## Resumen de entrevistas con usuarios
 
 
