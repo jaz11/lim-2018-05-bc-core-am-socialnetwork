@@ -9,34 +9,54 @@
   <!-- <link rel="icon" href="../src/img/L_logo.png" /> -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../bootstrap-4.1.2-dist/css/bootstrap.min.css" />
+  <!-- font aewsome -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- include bootstrap social -->
+  <link rel="stylesheet" href="../bootstrap-4.1.2-dist/css/bootstrap-social.css">
+  <!-- conexión css -->
+  <link rel="stylesheet" href="methods.css">
 </head>
 
 <body>
-  <header class="container">
-    <div>
-      <h1>WariQué?</h1>
-    </div>
-  </header>
+
   <main>
-    <section id="login-section">
+    <section id="login-section" class="container-fluid">
       <div>
-        <div id="login">
-          <h2>Inicia Sesión</h2>
-          <p>Redes Sociales</p>
-          <!-- <p class="col-md-5">Redes Sociales</p> -->
-          <button type="submit" id="google-button">Inicia sesión con Google</button>
-          <button type="submit" id="facebook-button">Inicia sesión con Facebook</button>
-          <hr>
-          <p>Correo Electrónico / Email</p>
-          <form onsubmit="return false">
-            <!-- <input id="user" type="text" placeholder="Nombre de Usuario"/> -->
-            <input id="email-signin" type="email" placeholder="Correo Electrónico/Email" required/>
-            <input id="password-signin" type="password" placeholder="Contraseña" required/>
-            <button type="submit" id="sign-in-button">Sign in</button>
-          </form>
-          <p>¿Aún no tienes una cuenta?
-            <a href="#" id="register-link">Regístrate</a>
-          </p>
+        <div id="login" >
+          <div class="row">
+            <img src="../img/css/wariqué.png" alt=""  class="img-responsive">
+          </div>
+          <div class="row" >
+            <h2>¿Qué se te antoja hoy?</h2>
+          </div>
+          <div class="row">
+            <form onsubmit="return false">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email-signin" placeholder="Correo Electrónico/Email" required>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password-signin" placeholder="Contraseña" required>
+              </div>
+              <div>
+                <button type="submit" id="sign-in-button" class="btn btn-outline-danger">Ingresa</button>
+              </div>
+            </form>
+          </div>
+          <div class="row">
+            <button type="submit" id="google-button" class="btn btn-block btn-social btn-google">
+              <span class="fa fa-google"></span> Inicia sesión con Google
+            </button>
+          </div>
+          <div class="row">
+            <button type="submit" id="facebook-button" class="btn btn-block btn-social btn-facebook">
+              <span class="fa fa-facebook"></span> Inicia sesión con Facebook
+            </button>
+          </div>
+          <div class="row">
+            <p>¿Aún no tienes una cuenta?
+              <a href="#" id="register-link">Regístrate</a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
