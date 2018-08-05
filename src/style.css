@@ -1,7 +1,15 @@
-.hiden {
+#login-section {
+  display: block;
+ }
+     
+ #register-section {
+  display: none;
+ };
+ 
+/* .hiden {
     display: none;
     }
 
 .show {
     display: block;
-    }
+    } */

@@ -15,24 +15,24 @@ const signInButton = document.getElementById('sign-in-button');
 
 //Function to call the other HTML where's the main page of the app
 const htmlCall = () => {
-    window.location.assign('mainpage.html');
+  window.location.assign('../src/components/mainpage.html');
 };
 
 //EMAIL register
-registerButton.addEventListener('click', () => { 
-    const cb = (error, result) => {
-        if(error) {
-            console.log(error.code, error.message);
-        } else {
-            alert('¡Usuario Registrado Exitosamente!');
-            let user = result.user;
-            //writeUserData recibe parametros
-            writeUserData(user.uid, user.displayName, user.email, user.photoURL);
-            htmlCall();
-        }
+registerButton.addEventListener('click', () => {
+  const cb = (error, result) => {
+    if (error) {
+      console.log(error.code, error.message);
+    } else {
+      alert('¡Usuario Registrado Exitosamente!');
+      let user = result.user;
+      //writeUserData recibe parametros
+      writeUserData(user.uid, user.displayName, user.email, user.photoURL);
+      htmlCall();
     }
+  }
 
-    signUp(emailSignUp.value, passwordSignUp.value, cb);
+  signUp(emailSignUp.value, passwordSignUp.value, cb);
 
 });
 
@@ -48,102 +48,75 @@ registerButton.addEventListener('click', () => {
 
 //EMAIL LogIn button 
 signInButton.addEventListener('click', () => {
-    const cb = (error, result) => {
-        if (error) {
-            console.log(error.code, error.message);
-        } else {
-            alert('Sesión Iniciada Correctamente');
-            htmlCall();
-        }
+  const cb = (error, result) => {
+    if (error) {
+      console.log(error.code, error.message);
+    } else {
+      alert('Sesión Iniciada Correctamente');
+      htmlCall();
     }
+  }
 
-    signIn(emailSignIn.value, passwordSignIn.value, cb);
+  signIn(emailSignIn.value, passwordSignIn.value, cb);
 
 });
 
 //GOOGLE LogIn button 
 
-
 googleButton.addEventListener('click', () => {
-    let provider;
-    const cb = (error, result) => {
-        if (error) {
-            console.log(error.code);
-            console.log(error.message);
-            console.log(error.email);
-            console.log(error.credential);
-        } else {
-            alert('¡Usuario Registrado Con Google Exitosamente!')
-            let user = result.user;
-            writeUserData(user.uid, user.displayName, user.email, user.photoURL);
-            htmlCall();
-        }
+  let provider;
+  const cb = (error, result) => {
+    if (error) {
+      console.log(error.code);
+      console.log(error.message);
+      console.log(error.email);
+      console.log(error.credential);
+    } else {
+      alert('¡Usuario Registrado Con Google Exitosamente!')
+      let user = result.user;
+      writeUserData(user.uid, user.displayName, user.email, user.photoURL);
+      htmlCall();
     }
+  }
 
-    signInGoogle(provider, cb);
+  signInGoogle(provider, cb);
 
 });
 
 //FACEBOOK LogIn button
 facebookButton.addEventListener('click', () => {
-    let provider;
-    const cb = (error, result) => {
-        if (error) {
-            console.log(error.code);
-            console.log(error.message);
-            console.log(error.email);
-            console.log(error.credential);
+  let provider;
+  const cb = (error, result) => {
+    if (error) {
+      console.log(error.code);
+      console.log(error.message);
+      console.log(error.email);
+      console.log(error.credential);
 
-        } else {
-            alert('¡Usuario Registrado Con Facebook Exitosamente!')
-            let user = result.user;
-            writeUserData(user.uid, user.displayName, user.email, user.photoURL);
-            htmlCall();
-        }
+    } else {
+      alert('¡Usuario Registrado Con Facebook Exitosamente!')
+      let user = result.user;
+      writeUserData(user.uid, user.displayName, user.email, user.photoURL);
+      htmlCall();
     }
+  }
 
-    signInFacebook(provider, cb);
+  signInFacebook(provider, cb);
 
 });
 
+const registerLink = document.getElementById('register-link');
+const registerSection = document.getElementById('register-section');
 
-// facebookButton.addEventListener('click', () => {
-//     let provider = new firebase.auth.FacebookAuthProvider();
-//     provider.setCustomParameters({
-//         'display': 'popup'
-//     });
-//     firebase.auth().signInWithPopup(provider)
-//         .then((result) => {
-//             alert('¡Usuario Registrado Con Facebook Exitosamente!')
-//             let user = result.user;
-//             writeUserData(user.uid, user.displayName, user.email, user.photoURL);
-//             htmlCall();
-//         })
-//         .catch((error) => {
-//             console.log(error.code);
-//             console.log(error.message);
-//             console.log(error.email);
-//             console.log(error.credential);
-//         });
-// })
+registerLink.addEventListener('click', () => {
+  registerSection.style.display = 'block';
+  loginSection.style.display = 'none';
+});
 
-// googleButton.addEventListener('click', () => {
-//     let provider = new firebase.auth.GoogleAuthProvider();
-//     provider.setCustomParameters({
-//         'display': 'popup'
-//     });
-//     firebase.auth().signInWithPopup(provider)
-//         .then((result) => {
-//             alert('¡Usuario Registrado Con Google Exitosamente!')
-//             let user = result.user;
-//             writeUserData(user.uid, user.displayName, user.email, user.photoURL);
-//             htmlCall();
-//         })
-//         .catch((error) => {
-//             console.log(error.code);
-//             console.log(error.message);
-//             console.log(error.email);
-//             console.log(error.credential);
-//         });
-// })
+const loginLink = document.getElementById('login-link');
+const loginSection = document.getElementById('login-section');
 
+loginLink.addEventListener('click', () => {
+  loginSection.style.display = 'block';
+  registerSection.style.display = 'none';
+});
