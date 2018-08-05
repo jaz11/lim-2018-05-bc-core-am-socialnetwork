@@ -123,7 +123,6 @@ En esta etapa elaboramos un prototipo que nos permita probar nuestras ideas con 
 |![Vista register](img/readme/vistax1.png) | ![Vista choose](img/readme/vistax2.png)|
 
 
-
 **Prototipado de alta fidelidad**
 
 El prototipo de alta fidelidad se realizó en [Figma](https://www.figma.com/file/RZ0tWEcYIf6hfsMQWWf1dQmA/Social-Network?node-id=9%3A1) donde elaboramos las vistas a considerar para la presentacion del proyecto.
@@ -149,7 +148,7 @@ El prototipo de alta fidelidad se realizó en [Figma](https://www.figma.com/file
 
    ![testeo.png](img/readme/Testeo.jpeg)
 
-  
+
 * Como primer feedback de testeo, el usuario comentó que si crea una cuenta nueva entonces debe ser redirigido a la web automáticamente y no a la página de acceso porque crearía demasiada redundancia.
 
 * Como segundo feedback de testeo, el usuario comentó que las letras de "crear cuenta" e "iniciar sesión" deben ser más vistosas pues le era confuso diferenciar su funcionalidad. 
