@@ -3,6 +3,17 @@ const userName = document.getElementById('user-name');
 let saveButton = document.getElementById('saveButton');
 saveButton = addEventListener('click', saveData());
 
+//LogOut button 
+logOutButton.addEventListener('click', () => {
+  firebase.auth().signOut().then(() => {
+      console.log('Cierro sesion');
+      login.classList.remove('hiden');
+      logout.classList.add('hiden');
+  }).catch((error) => {
+      console.log('error al cerrar sesión');
+  });
+});
+
 firebase.initializeApp({
   apiKey: "AIzaSyC1K9LkUQyl4cVah4hXkQ6CINmg9Zd_kZI",
   authDomain: "warique-88140.firebaseapp.com",
@@ -77,14 +88,3 @@ const removePost = (id) => {
     console.error("Error removing document: ", error);
   });
 };
-
-//LogOut button 
-logOutButton.addEventListener('click', () => {
-  firebase.auth().signOut().then(() => {
-      console.log('Cierro sesion');
-      login.classList.remove('hiden');
-      logout.classList.add('hiden');
-  }).catch((error) => {
-      console.log('error al cerrar sesión');
-  });
-})
