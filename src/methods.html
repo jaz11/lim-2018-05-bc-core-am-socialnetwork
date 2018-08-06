@@ -9,57 +9,130 @@
   <!-- <link rel="icon" href="../src/img/L_logo.png" /> -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../bootstrap-4.1.2-dist/css/bootstrap.min.css" />
+  <!-- font aewsome -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- include bootstrap social -->
+  <link rel="stylesheet" href="../bootstrap-4.1.2-dist/css/bootstrap-social.css">
+  <!-- conexión css -->
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="register.css">
 </head>
 
-<body>
-  <header class="container">
-    <div>
-      <h1>WariQué?</h1>
-    </div>
-  </header>
-  <main>
-    <section id="login-section">
-      <div>
-        <div id="login">
-          <h2>Inicia Sesión</h2>
-          <p>Redes Sociales</p>
-          <!-- <p class="col-md-5">Redes Sociales</p> -->
-          <button type="submit" id="google-button">Inicia sesión con Google</button>
-          <button type="submit" id="facebook-button">Inicia sesión con Facebook</button>
-          <hr>
-          <p>Correo Electrónico / Email</p>
+<body class="container">
+
+  <section id="login-section">
+    <div id="login">
+      <div class="row">
+        <div class="col-xs-12">
+          <img src="../img/css/wariqué.png" id="div-imagen" class="img-responsive">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>¿Qué se te antoja hoy?</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
           <form onsubmit="return false">
-            <!-- <input id="user" type="text" placeholder="Nombre de Usuario"/> -->
-            <input id="email-signin" type="email" placeholder="Correo Electrónico/Email" required/>
-            <input id="password-signin" type="password" placeholder="Contraseña" required/>
-            <button type="submit" id="sign-in-button">Sign in</button>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email-signin" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password-signin" placeholder="Password" required>
+            </div>
+            <div>
+              <button type="submit" id="sign-in-button" class="btn btn-outline-danger">Ingresa</button>
+            </div>
           </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" id="facebook-button" class="btn btn-block btn-social btn-facebook">
+            <span class="fa fa-facebook"></span> Inicia sesión con Facebook
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" id="google-button" class="btn btn-block btn-social btn-google">
+            <span class="fa fa-google"></span> Inicia sesión con Google
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
           <p>¿Aún no tienes una cuenta?
             <a href="#" id="register-link">Regístrate</a>
           </p>
         </div>
       </div>
-    </section>
-    <section id="register-section">
-      <h2>Regístrate</h2>
-      <p>Correo Electrónico</p>
-      <form onsubmit="return false">
-        <input type="text" placeholder="Nombre Completo" id="name-signup" required>
-        <input type="text" placeholder="Nombre de Usuario" id="user-signup" required>
-        <input type="email" placeholder="Correo Electrónico/Email" id="email-signup" required>
-        <input type="password" placeholder="Contraseña" id="password-signup" required>
-        <input type="password" placeholder="Confirma tu contraseña" id="password-validation" required>
-        <label>
-          <input type="checkbox" id="obl-checkbox" value="checkbox" required>Al registrarte aceptas todos los
-          <a href="../src/components/termsandconditions.html" id="term-cond">Términos Y Condiciones</a>
-        </label>
-        <button type="submit" id="register">Sign Up</button>
-      </form>
-      <p>¿Ya tienes cuenta?
-        <a href="#" id="login-link">Ingresa</a>
-      </p>
-    </section>
-  </main>
+    </div>
+  </section>
+  <section id="register-section">
+    <div id="register-div">
+      <div class="row">
+        <div class="col-xs-12" id="div-imagen-register">
+          <img src="../img/css/wariqué.png" class="img-responsive">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>¿Qué se te antoja hoy?</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <form onsubmit="return false">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name-signup" placeholder="Nombre Completo" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="user-signup" placeholder="Nombre de Usuario" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email-signup" placeholder="Correo Electrónico/Email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password-signup" placeholder="Contraseña" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password-validation" placeholder="Confirma tu contraseña" required>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="register" class="btn btn-danger">Registrarte</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <p>¿Ya tienes una cuenta?
+            <a href="#" id="login-link">Ingresa</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <!-- <input type="checkbox" id="obl-checkbox" value="checkbox" required> -->
+          <p id="text-condition">
+            Al registrarte aceptas todos los
+          </p>
+        </div>
+        <div class="col-xs-6">
+          <a href="../src/components/termsandconditions.html" id="a-condition">Términos Y Condiciones
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
@@ -70,7 +143,6 @@
 
   <!-- <script src="../src/js/mainpage.js"></script> -->
 
-</html>
 </body>
 
 </html>

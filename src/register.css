@@ -1,0 +1,67 @@
+
+/* imagen wariqué */
+#register-section #register-div img{
+    border-radius:100px 100px;
+    margin: 0 auto;
+    margin-top: 4%;
+}
+#div-imagen-register{
+    text-align: center;
+}
+
+/* ¿que se te antoja hoy? */
+#register-section #register-div h2{
+    color: white;
+    text-align: center;
+    margin: 0px auto;
+}
+
+/* formulario: correo y contraseña */
+#register-section #register-div form{
+    border-radius: 8px;
+    margin: 10px auto;
+    padding: 20px 30px;
+    width: 320px;
+    background-color: white;
+}
+#register-section #register-div form .form-group {
+    margin-bottom: 5px;
+}
+
+/* boton registrate */
+#register{
+    margin-left: 15%;
+    width: 70%;
+    font-weight: bold;
+ }
+
+ /* ya tienes una cuenta */
+ #register-section #register-div p{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* Ingresa */
+#register-section #register-div p a {
+  color: white; 
+  font-size: 150%;
+}
+/* al registrarte aceptas.. */
+#text-condition{
+  text-decoration-color: white;
+  /* font-size: 0px; */
+  margin: 0%;
+  font-weight: lighter;
+}
+/* terminos y condiciones */
+#register-section #register-div a {
+    /* padding: 5px 42%; */
+    text-align: center;
+    display: inline-block;
+    color:white; 
+}
+#a-condition{
+  padding: 0px 40%;
+  padding-left: 42%;
+}

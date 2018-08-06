@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+.container{
+    background: url(../img/css/fondo.jpeg);
+    height: 100%;
+    width: 100%;
+    /* margin: 100px; */
+    padding: 0%;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+  
+.container::before{
+   content: "";
+   bottom: 0%;
+   right: 0%;
+   height:100%;
+   width: 100%;
+   background-color: black;
+   position: absolute;
+   opacity: 0.3;
+   z-index: -1;
+  }
+
+.row{
+    display: block;
+}
+/* imagen wariqué */
+#login-section #login img{
+    border-radius:100px 100px;
+    margin: 0 auto;
+    margin-top: 4%;
+}
+
+#div-imagen{
+   margin: 100px auto;
+   display: block;
+}
+
+/* ¿que se te antoja hoy? */
+#login-section #login h2{
+    color: white;
+    text-align: center;
+    margin: 0px auto;
+}
+
+/* formulario: correo y contraseña */
+#login-section #login form{
+    border-radius: 8px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    width: 320px;
+    background-color: white;
+}
+
+/* boton ingresa */
+#sign-in-button{
+   margin-left: 15%;
+   width: 70%;
+   font-weight: bold;
+}
+
+/* boton de facebook */
+#facebook-button{
+   width: 250px;
+   text-align: center;
+   margin: 10px auto;
+}
+
+/* boton de google */
+#google-button{
+    width: 250px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+/* aún no tienes una cuenta */
+#login-section #login p{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Registrate */
+#login-section #login p a{
+    font-size: 150%;
+    color:white;
+}
+
+
+
