@@ -78,9 +78,7 @@ googleButton.addEventListener('click', () => {
       htmlCall();
     }
   }
-
   signInGoogle(provider, cb);
-
 });
 
 //FACEBOOK LogIn button

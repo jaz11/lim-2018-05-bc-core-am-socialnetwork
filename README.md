@@ -258,6 +258,18 @@ Adicionalmente realizaremos una campaña de difusión en redes sociales (Twitter
 * [x] Valida password.
 * [x] Muestra mensajes de error.
 
+*Validaciones del login*
+
+| **Correo** | **Contraseña** | **¿Ingresa?** | 
+| :------- | :------: | :------: | 
+| Correcto  | Incorrecto | No ingresa |
+| Nombre de usuario  | Correcto | No ingresa |
+| Sin arroba | Correcto | No ingresa |
+| Espacios en blanco  | Correcto | No ingresa |
+| Sin .com/.es  | Correcto | No ingresa |
+| Punto seguido del arroba  | Correcto | No ingresa |
+
+
 ### Muro (wall/feed)
 
 * [x] Muestra _muro_.
