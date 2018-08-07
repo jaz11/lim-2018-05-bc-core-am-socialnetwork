@@ -37,23 +37,45 @@
       <tbody id="tabla"></tbody>
     </table>
   </div>
+  <!-- bienvenida de usuarios -->
+  <!-- boton de salida -->
   <div id="logout" class="hiden">
+    <button type="button" id="btnLogout" class="btn btn-info" value="Logout">Salir</button>
+  </div>
+  
+  <!-- usuario -->
+  <div>
     <p id="user-name"></p>
-    <input type="button" id="btnLogout" value="Logout" />
+  </div>
+
+  <!-- ingreso de post -->
+  <div id="bd" class="hiden">
+    <textarea class="form-control" id="post" rows="3"></textarea>
+    <button type="button" id="btn-save" class="btn btn-danger">Publicar</button>
+  </div>
+
+  <!-- el contenido que se va creando -->
+  <div id="post" class="hiden">
+    <h3>Post</h3>
   </div>
 
 
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC1K9LkUQyl4cVah4hXkQ6CINmg9Zd_kZI",
+      authDomain: "warique-88140.firebaseapp.com",
+      databaseURL: "https://warique-88140.firebaseio.com",
+      projectId: "warique-88140",
+      storageBucket: "warique-88140.appspot.com",
+      messagingSenderId: "399831724179"
+    };
+    firebase.initializeApp(config);
+  </script>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!--     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script> -->
-  <script src="mainpage.js" ></script>      
-  <script src="methods.js"></script>
+  <script src="../js/mainpage.js"></script>
+  <script src="../js/methods.js"></script>
 </body>
 
 </html>
