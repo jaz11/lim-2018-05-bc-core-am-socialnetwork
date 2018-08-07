@@ -214,7 +214,6 @@ Adicionalmente realizaremos una campaña de difusión en redes sociales (Twitter
 
 
 ## **REQUERIMIENTOS DEL PROYECTO**
-***
 
 ### Checklist
 
