@@ -72,15 +72,13 @@ googleButton.addEventListener('click', () => {
       console.log(error.email);
       console.log(error.credential);
     } else {
-      alert('¡Usuario Registrado Con Google Exitosamente!')
       let user = result.user;
       writeUserData(user.uid, user.displayName, user.email, user.photoURL);
+      alert('¡Usuario Registrado Con Google Exitosamente!');
       htmlCall();
     }
   }
-
   signInGoogle(provider, cb);
-
 });
 
 //FACEBOOK LogIn button
@@ -94,9 +92,9 @@ facebookButton.addEventListener('click', () => {
       console.log(error.credential);
 
     } else {
-      alert('¡Usuario Registrado Con Facebook Exitosamente!')
       let user = result.user;
       writeUserData(user.uid, user.displayName, user.email, user.photoURL);
+      alert('¡Usuario Registrado Con Facebook Exitosamente!');
       htmlCall();
     }
   }
