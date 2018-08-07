@@ -69,9 +69,7 @@ googleButton.addEventListener('click', () => {
       writeUserData(user.uid, user.displayName, user.email, user.photoURL);
     }
   }
-
   signInGoogle(provider, cb);
-
 });
 
 //FACEBOOK LogIn button
