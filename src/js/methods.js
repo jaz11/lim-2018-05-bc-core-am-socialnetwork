@@ -24,10 +24,10 @@ registerButton.addEventListener('click', () => {
     if (error) {
       console.log(error.code, error.message);
     } else {
-      alert('¡Usuario Registrado Exitosamente!');
       let user = result.user;
       //writeUserData recibe parametros
       writeUserData(user.uid, user.displayName, user.email, user.photoURL);
+      alert('¡Usuario Registrado Exitosamente!');
       htmlCall();
     }
   }

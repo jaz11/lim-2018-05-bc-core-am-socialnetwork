@@ -56,15 +56,19 @@ Las cocinas constituyen un elemento de sinergia sobre diversos aspectos de la vi
 
 **Encuesta**
 
+![entrevista.jpeg](img/readme/entrevista.jpeg)
 
+Realizamos encuestas a 6 potenciales usuarios; personas que en general buscan un lugar nuevo para comer, que constantemente buscan probar nuevos sabores, familias que buscan almorzar algo diferente y rico, un fin de semana.
+
+En ellos identificamos el problema de la desconfianza al buscar un nuevo lugar donde comer que no solo satisfaga con su sabor, sino que tenga un precio accesible y una buena atención de servicio.
 
 ### **2.2 SINTESIS Y DEFINICION**
 ![ux_definición.png](img/readme/ux_definición.png)
 
 En esta fase usamos los datos coleccionados y entendemos los deseos y necesidades del público al que estará dirigido nuestro producto.
 
-//añadir comntario
-
+Concluímos que el principal problema que ellos atraviesan es que no confían en los lugares a donde quieren ir a comer, debido a factores como bajo costo, presentación del lugar, tiempo de servicio, es por ello que, "WariQué" en la búsqueda de solucionar el problema, crea una red social en la que puedes valorar, recomendar la opinión de los usuarios según las experiencias que hayan tenido anteriormete.
+  
 
 ### **2.3 IDEACIÓN**
 ![ux_ideación.png](img/readme/ux_ideación.png)
@@ -206,7 +210,7 @@ A través de las entrevistas nos dimos cuenta de que las personas confían mucho
 
 La estrategia de difusión consiste principalmente en la recomendación 'boca a boca'. Además nos contactaremos con redactores de medios en línea de la sección tecnología y/o gastronomía, influencers y bloggueros para que realicen alguna mención de nuestra app en sus medios.
 
-Adicionalmente realizaremos una campa de difusión en redes sociales (Twitter, Facebook e Instagram), con mayor fuerza en la hora de las comidas y fines de semana que es donde las personas se dan tiempo para buscar lugares para comer.
+Adicionalmente realizaremos una campaña de difusión en redes sociales (Twitter, Facebook e Instagram), con mayor fuerza en la hora de las comidas y fines de semana que es donde las personas se dan tiempo para buscar lugares para comer.
 
 
 ## **REQUERIMIENTOS DEL PROYECTO**
@@ -269,8 +273,8 @@ Adicionalmente realizaremos una campa de difusión en redes sociales (Twitter, F
 ### Muro (wall/feed)
 
 * [x] Muestra _muro_.
-* [x] Permite publicar nuevos posts.
-* [x] Permite eliminar posts.
+* [] Permite publicar nuevos posts.
+* [] Permite eliminar posts.
 * [ ] Pide confirmación antes de borrar posts.
 * [ ] Permite editar posts (in place).
 * [ ] Permite publicar y filtrar posts por público/yo.

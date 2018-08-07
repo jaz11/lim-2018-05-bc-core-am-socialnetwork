@@ -10,7 +10,7 @@ const posts = document.getElementById('posts');
 logOutButton.addEventListener('click', () => {
   firebase.auth().signOut()
     .then(() => {
-      window.location.assign('../methods.html');
+      window.location.assign('../index.html');
     }).catch((error) => {
       console.log('error al cerrar sesión');
     });
@@ -19,9 +19,11 @@ logOutButton.addEventListener('click', () => {
 // firebase.auth().onAuthStateChanged(function (user) {
 //   if (user) {
 //     bd.classList.remove('hiden');
+//     posts.classList.remove('hiden');
 //     userName.innerHTML=`Bienvenida ${user.display}`
 //   } else {
-//     bd.classList.add('hiden')
+//     bd.classList.add('hiden');
+//     post.classList.add('hiden')
 //   }
 // });
 
