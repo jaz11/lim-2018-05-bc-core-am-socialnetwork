@@ -24,10 +24,10 @@ registerButton.addEventListener('click', () => {
     if (error) {
       console.log(error.code, error.message);
     } else {
-      alert('¡Usuario Registrado Exitosamente!');
       let user = result.user;
       //writeUserData recibe parametros
       writeUserData(user.uid, user.displayName, user.email, user.photoURL);
+      alert('¡Usuario Registrado Exitosamente!');
       htmlCall();
     }
   }
@@ -72,9 +72,9 @@ googleButton.addEventListener('click', () => {
       console.log(error.email);
       console.log(error.credential);
     } else {
-      alert('¡Usuario Registrado Con Google Exitosamente!')
       let user = result.user;
       writeUserData(user.uid, user.displayName, user.email, user.photoURL);
+      alert('¡Usuario Registrado Con Google Exitosamente!');
       htmlCall();
     }
   }
@@ -94,9 +94,9 @@ facebookButton.addEventListener('click', () => {
       console.log(error.credential);
 
     } else {
-      alert('¡Usuario Registrado Con Facebook Exitosamente!')
       let user = result.user;
       writeUserData(user.uid, user.displayName, user.email, user.photoURL);
+      alert('¡Usuario Registrado Con Facebook Exitosamente!');
       htmlCall();
     }
   }
