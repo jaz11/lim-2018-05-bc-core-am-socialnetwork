@@ -11,8 +11,9 @@
     background-position:center;
   }
   
-.container::before{
+body::before{
    content: "";
+   top: 0%;  
    bottom: 0%;
    right: 0%;
    height:100%;
