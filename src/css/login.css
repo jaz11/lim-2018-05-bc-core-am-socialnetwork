@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .container{
-    background: url(../img/css/fondo.jpeg);
+    background: url(../../img/css/fondo.jpeg);
     height: 100%;
     width: 100%;
     /* margin: 100px; */
