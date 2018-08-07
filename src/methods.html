@@ -7,15 +7,15 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <link rel="icon" href="../src/img/L_logo.png" /> -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="../bootstrap-4.1.2-dist/css/bootstrap.min.css" />
   <!-- font aewsome -->
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- include bootstrap social -->
   <link rel="stylesheet" href="../bootstrap-4.1.2-dist/css/bootstrap-social.css">
   <!-- conexión css -->
-  <link rel="stylesheet" href="login.css">
-  <link rel="stylesheet" href="register.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/register.css">
 </head>
 
 <body class="container">
@@ -134,14 +134,25 @@
     </div>
   </section>
 
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC1K9LkUQyl4cVah4hXkQ6CINmg9Zd_kZI",
+      authDomain: "warique-88140.firebaseapp.com",
+      databaseURL: "https://warique-88140.firebaseio.com",
+      projectId: "warique-88140",
+      storageBucket: "warique-88140.appspot.com",
+      messagingSenderId: "399831724179"
+    };
+    firebase.initializeApp(config);
+  </script>
 
-  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
   <script src="../bootstrap-4.1.2-dist/js/jQuery.js"></script>
   <script src="../bootstrap-4.1.2-dist/js/bootstrap.min.js"></script>
-  <script src="../src/js/data.js"></script>
-  <script src="../src/js/methods.js"></script>
 
-  <!-- <script src="../src/js/mainpage.js"></script> -->
+  <script src="/src/js/data.js"></script>
+  <script src="/src/js/methods.js"></script>
 
 </body>
 
