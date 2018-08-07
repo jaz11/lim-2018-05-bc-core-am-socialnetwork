@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WariQué?</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="icon" href="../src/img/L_logo.png" /> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../bootstrap-4.1.2-dist/css/bootstrap.min.css" />
+  <!-- font aewsome -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- include bootstrap social -->
+  <link rel="stylesheet" href="../bootstrap-4.1.2-dist/css/bootstrap-social.css">
+  <!-- conexión css -->
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body class="container">
+
+  <section id="login-section">
+    <div id="login">
+      <div class="row">
+        <div class="col-xs-12">
+          <img src="../img/css/wariqué.png" id="div-imagen" class="img-responsive">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>¿Qué se te antoja hoy?</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <form onsubmit="return false">
+            <div class="form-group">
+              <input type="email" class="form-control" id="email-signin" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password-signin" placeholder="Password" required>
+            </div>
+            <div>
+              <button type="submit" id="sign-in-button" class="btn btn-outline-danger">Ingresa</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" id="facebook-button" class="btn btn-block btn-social btn-facebook">
+            <span class="fa fa-facebook"></span> Inicia sesión con Facebook
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" id="google-button" class="btn btn-block btn-social btn-google">
+            <span class="fa fa-google"></span> Inicia sesión con Google
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <p>¿Aún no tienes una cuenta?
+            <a href="#" id="register-link">Regístrate</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="register-section">
+    <div id="register-div">
+      <div class="row">
+        <div class="col-xs-12" id="div-imagen-register">
+          <img src="../img/css/wariqué.png" class="img-responsive">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>¿Qué se te antoja hoy?</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <form onsubmit="return false">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name-signup" placeholder="Nombre Completo" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="user-signup" placeholder="Nombre de Usuario" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email-signup" placeholder="Correo Electrónico/Email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password-signup" placeholder="Contraseña" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password-validation" placeholder="Confirma tu contraseña" required>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="register" class="btn btn-danger">Registrarte</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <p>¿Ya tienes una cuenta?
+            <a href="#" id="login-link">Ingresa</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <!-- <input type="checkbox" id="obl-checkbox" value="checkbox" required> -->
+          <p id="text-condition">
+            Al registrarte aceptas todos los
+          </p>
+        </div>
+        <div class="col-xs-6">
+          <a href="../src/components/termsandconditions.html" id="a-condition">Términos Y Condiciones
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC1K9LkUQyl4cVah4hXkQ6CINmg9Zd_kZI",
+      authDomain: "warique-88140.firebaseapp.com",
+      databaseURL: "https://warique-88140.firebaseio.com",
+      projectId: "warique-88140",
+      storageBucket: "warique-88140.appspot.com",
+      messagingSenderId: "399831724179"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="../bootstrap-4.1.2-dist/js/jQuery.js"></script>
+  <script src="../bootstrap-4.1.2-dist/js/bootstrap.min.js"></script>
+
+  <script src="/src/js/data.js"></script>
+  <script src="/src/js/methods.js"></script>
+
+</body>
+
+</html>
