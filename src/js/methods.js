@@ -21,6 +21,10 @@ const htmlCall = () => {
 
 //EMAIL register
 registerButton.addEventListener('click', () => {
+
+  registerEmail(emailSignUp) ? emailSignUp.value ="Email válido" : emailSignUp.value="Email inválido";
+  registerPassword(passwordSignUp)? passwordSignUp.value="contraseña válida" : passwordSignUp.value="Contraseña inválida";
+
   const cb = (error, result) => {
     if (error) {
       console.log(error.code, error.message);
@@ -30,7 +34,7 @@ registerButton.addEventListener('click', () => {
       let user = result.user;
       writeUserData(user.uid, user.displayName, user.email, user.photoURL);
     }
-  }
+  };
 
   signUp(emailSignUp.value, passwordSignUp.value, cb);
 
@@ -40,6 +44,10 @@ registerButton.addEventListener('click', () => {
 
 //EMAIL LogIn button 
 signInButton.addEventListener('click', () => {
+
+  loginEmail(emailSignIn) ? emailSignIn.value ="Email válido": emailSignIn.value="Email inváido";
+  loginPassword(passwordSignIn) ? passwordSignUp= "Password válido": passwordSignUp = "Contraseña inválida";
+
   const cb = (error, result) => {
     if (error) {
       console.log(error.code, error.message);
