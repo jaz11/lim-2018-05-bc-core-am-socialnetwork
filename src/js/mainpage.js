@@ -1,15 +1,25 @@
 const logOutButton = document.getElementById('btnLogout');
 const userName = document.getElementById('user-name');
-const bd = document.getElementById('db');
-const btnSave = document.getElementById('btn-saven');
-const post = document.getElementById('post');
-const posts = document.getElementById('posts');
-// const privacySelect = document.getElementById('privacy-option');
+const newPost = document.getElementById('new-post');
+const inputPost = document.getElementById('post');
+const buttonToPublic = document.getElementById('bttn-new-post');
+const privacyOptions = document.getElementById('privacy-options');
+const posts = document.getElementById('post-container');
 
-// privacySelect.
-// const forPrivacy = () => {
-
-// }
+buttonToPublic.addEventListener('click', () => {
+userId;
+const newPostOfUser = newUserPost(userId, post.value); 
+// const printPost = document.createElement('p').innerHTML(`${post.value}`);
+let toEdit = document.createElement('button');
+toEdit.createElement('type', 'input');
+toEdit.setAttribute('value', 'Update');
+let toDelete = document.createElement('button');
+toDelete.setAttribute('value', 'Delete');
+let containerPost = document.createElement('div');
+let printPost = document.createElement('p');
+printPost.setAttribute('id', newPostOfUser);
+printPost.innerHTML(`${post.value}`);
+});
 
 //LogOut button 
 logOutButton.addEventListener('click', () => {

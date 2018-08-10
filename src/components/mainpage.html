@@ -15,32 +15,30 @@
 </head>
 
 <body>
-  <!-- bienvenida de usuarios -->
-
+  <header>WariQué?</header>
   <!-- usuario -->
   <div>
     <img src="../../img/user-icon-72x72(1).png" type="image/png" sizes="72x72" href="/apple-icon-72x72.pn">
     <p id="user-name"></p>
   </div>
 
-  <h2>Postea</h2>
+  <h4>¿Qué se te antoja hoy?</h4>
 
   <!-- ingreso de post -->
-  <div id="new-post" class="hiden">
+  <div id="new-post">
     <select name="privacy-option" id="privacy-option">
-      <option value="privacidad">Privacidad</option>
-      <option value="private">Privado</option>
       <option value="public">Público</option>
+      <option value="private">Privado</option>
     </select>
     <textarea class="form-control" id="post" rows="3"></textarea>
     <button type="button" id="bttn-new-post" class="btn btn-danger">Publicar</button>
   </div>
+  <hr>
 
   <!-- el contenido que se va creando -->
-  <h2>Post</h2>
-  <div id="post-container" class="hiden">
-
-  </div>
+  <h4>Post</h4>
+  <hr>
+  <div id="post-container"></div>
 
   <!-- boton de salida -->
   <div id="logout" class="hiden">
@@ -64,6 +62,7 @@
     firebase.initializeApp(config);
   </script>
 
+  <script src="/__/firebase/4.12.1/firebase-database.js"></script>
   <script src="../js/mainpage.js"></script>
   <script src="../js/methods.js"></script>
 </body>

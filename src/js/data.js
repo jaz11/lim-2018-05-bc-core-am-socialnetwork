@@ -55,3 +55,26 @@ window.signInFacebook = (provider, cb) => {
         })
 };
 
+window.newUserPost = (uid, username, picture, body) => {
+    let dataOfPosts = {
+        author: username,
+        uid: uid,
+        body: body,
+        authorPic: picture
+    };
+
+    let keyOfPost = firebase.database().ref().child('posts').push().key;
+
+    let updates = {};
+    updates['/posts/' + keyOfPost] = newUserPost;
+    updates['/user-posts/' + uid + '/' + keyOfPost] = newUserPost;
+
+    firebase.database().ref().update(updates);
+    return keyOfPost;
+
+};
+
+// let toDeletePost = firebase.database().ref().child('/user-posts/' + userId + '/' + newPostOfUser).remove
+
+// let userId = firebase.auth().currentUser.uid;
+
