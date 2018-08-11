@@ -1,9 +1,9 @@
 //SignUp variables
-const nameSignUp = document.getElementById('name-signup');
-const userSignUp = document.getElementById('user-signup');
+// const nameSignUp = document.getElementById('name-signup');
+// const userSignUp = document.getElementById('user-signup');
 const emailSignUp = document.getElementById('email-signup');
 const passwordSignUp = document.getElementById('password-signup');
-const passwordValidation = document.getElementById('password-validation');
+// const passwordValidation = document.getElementById('password-validation');
 const registerButton = document.getElementById('register');
 //SignIn variables
 const googleButton = document.getElementById('google-button');
@@ -17,19 +17,32 @@ const signInButton = document.getElementById('sign-in-button');
 const htmlCall = () => {
   window.location.assign('../src/components/mainpage.html');
 };
+// ../src/components/mainpage.html
 
 //EMAIL register
 registerButton.addEventListener('click', () => {
+
+  
+  registerEmail=(emailSignUp)=>{
+    emailSignUp.value ="Email válido"
+  }
+
+  registerPassword=(passwordSignUp)=>{
+    passwordSignUp.value="contraseña válida"
+  }
+  registerEmail(emailSignUp) ? emailSignUp.value ="Email válido" : emailSignUp.value="Email inválido";
+  registerPassword(passwordSignUp)? passwordSignUp.value="contraseña válida" : passwordSignUp.value="Contraseña inválida";
+
   const cb = (error, result) => {
     if (error) {
-      console.log(error.code, error.message);
+      // console.log(error.code, error.message);
     } else {
-      alert('¡Te Registrado Exitosamente!');
+      alert('¡Te Has Registrado Exitosamente!');
       htmlCall();
       let user = result.user;
       writeUserData(user.uid, user.displayName, user.email, user.photoURL);
     }
-  }
+  };
 
   signUp(emailSignUp.value, passwordSignUp.value, cb);
 
@@ -39,10 +52,23 @@ registerButton.addEventListener('click', () => {
 
 //EMAIL LogIn button 
 signInButton.addEventListener('click', () => {
+
+  loginEmail=(emailSignIn)=>{
+    emailSignIn.value ="Email válido"
+  }
+
+  loginPassword=(passwordSignIn)=>{
+    passwordSignIn.value= "Password válido"
+  }
+
+  loginEmail(emailSignIn) ? emailSignIn.value ="Email válido": emailSignIn.value="Email inváido";
+  loginPassword(passwordSignIn) ? passwordSignIn.value= "Password válido": passwordSignIn.value = "Contraseña inválida";
+
   const cb = (error, result) => {
     if (error) {
-      console.log(error.code, error.message);
+      // console.log(error.code, error.message);
     } else {
+      result;
       alert('Has Iniciado Sesión Correctamente');
       htmlCall();
     }
@@ -58,10 +84,10 @@ googleButton.addEventListener('click', () => {
   let provider;
   const cb = (error, result) => {
     if (error) {
-      console.log(error.code);
-      console.log(error.message);
-      console.log(error.email);
-      console.log(error.credential);
+      // console.log(error.code);
+      // console.log(error.message);
+      // console.log(error.email);
+      // console.log(error.credential);
     } else {
       alert('¡Has Sido Logueado Exitosamente!');
       htmlCall();
@@ -77,16 +103,16 @@ facebookButton.addEventListener('click', () => {
   let provider;
   const cb = (error, result) => {
     if (error) {
-      console.log(error.code);
-      console.log(error.message);
-      console.log(error.email);
-      console.log(error.credential);
+      // console.log(error.code);
+      // console.log(error.message);
+      // console.log(error.email);
+      // console.log(error.credential);
 
     } else {
-      alert('¡Has Sido Logueado Exitosamente!');
-      htmlCall();
       let user = result.user;
       writeUserData(user.uid, user.displayName, user.email, user.photoURL);
+      alert('¡Has Sido Logueado Exitosamente!');
+      htmlCall();
     }
   }
 

@@ -4,12 +4,6 @@ const newPost = document.getElementById('new-post');
 const inputPost = document.getElementById('post');
 const buttonToPublic = document.getElementById('bttn-new-post');
 const privacyOptions = document.getElementById('privacy-options');
-// const userName = document.getElementById('user-name');
-// const bd = document.getElementById('db');
-// const btnSave = document.getElementById('btn-saven');
-// const post = document.getElementById('post');
-// const posts = document.getElementById('posts');
-// const privacySelect = document.getElementById('privacy-option');
 
 buttonToPublic.addEventListener('click', () => {
   let currentUser = {};
@@ -36,10 +30,11 @@ logOutButton.addEventListener('click', () => {
   firebase.auth().signOut()
     .then(() => {
       window.location.assign('../index.html');
-    }).catch(() => {
-      // console.log('error al cerrar sesión')
+    }).catch((error) => {
+      console.log('error al cerrar sesión');
     });
 });
+
 
 
 
