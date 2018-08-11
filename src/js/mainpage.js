@@ -1,10 +1,16 @@
 const logOutButton = document.getElementById('btnLogout');
-const userName = document.getElementById('user-name');
-const bd = document.getElementById('db');
-const btnSave = document.getElementById('btn-saven');
-const post = document.getElementById('post');
-const posts = document.getElementById('posts');
+// const userName = document.getElementById('user-name');
+// const bd = document.getElementById('db');
+// const btnSave = document.getElementById('btn-saven');
+// const post = document.getElementById('post');
+// const posts = document.getElementById('posts');
 // const privacySelect = document.getElementById('privacy-option');
+
+const userName = document.getElementById('user-name');
+const newPost = document.getElementById('new-post');
+const inputPost = document.getElementById('post');
+const buttonToPublic = document.getElementById('bttn-new-post');
+const privacyOptions = document.getElementById('privacy-options');
 
 // privacySelect.
 // const forPrivacy = () => {
@@ -20,6 +26,20 @@ logOutButton.addEventListener('click', () => {
       console.log('error al cerrar sesión');
     });
 });
+
+
+// 
+
+// Get a reference to the database service
+var database = firebase.database();
+
+function writeUserData(userId, name, email, imageUrl) {
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+}
 
 // firebase.auth().onAuthStateChanged(function (user) {
 //   if (user) {
@@ -57,6 +77,13 @@ logOutButton.addEventListener('click', () => {
 // // Initialize Cloud Firestore through Firebase
 // const cloudFire = firebase.firestore();
 
+function writeUserData(userId, name, email, imageUrl) {
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+}
 // //agregar documentos
 // const saveData = () => {
 //   let name = document.getElementById('nombre').value
@@ -108,3 +135,95 @@ logOutButton.addEventListener('click', () => {
 //     console.error("Error removing document: ", error);
 //   });
 // };
+
+// cargar el muro 
+var userId = firebase.auth().currentUser.uid;
+return firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
+  var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+  // ...
+});
+
+//Hacer una nueva publicación
+function writeNewPost(uid, username, picture, title, body) {
+  // A post entry.
+  var postData = {
+    author: username,
+    uid: uid,
+    body: body,
+    title: title,
+    starCount: 0,
+    authorPic: picture
+  };
+
+  // Get a key for a new Post.
+  var newPostKey = firebase.database().ref().child('posts').push().key;
+
+  // Write the new post's data simultaneously in the posts list and the user's post list.
+  var updates = {};
+  updates['/posts/' + newPostKey] = postData;
+  updates['/user-posts/' + uid + '/' + newPostKey] = postData;
+
+  return firebase.database().ref().update(updates);
+}
+
+// recuento
+var starCountRef = firebase.database().ref('posts/' + postId + '/starCount');
+starCountRef.on('value', function(snapshot) {
+  updateStarCount(postElement, snapshot.val());
+});
+
+//editar una publicacion
+function editPost(uid, username, picture, title, body) {
+  // A post entry.
+  var postData = {
+    author: username,
+    uid: uid,
+    body: body,
+    title: title,
+    starCount: 0,
+    authorPic: picture
+  };
+
+  // Write the new post's data simultaneously in the posts list and the user's post list.
+  var updates = {};
+  updates['/posts/' + newPostKey] = postData;
+  updates['/user-posts/' + uid + '/' + newPostKey] = postData;
+
+  return firebase.database().ref().update(updates);
+
+}
+
+//Cómo agregar una devolución de llamada de finalización
+firebase.database().ref('users/' + userId).set({
+  username: name,
+  email: email,
+  profile_picture : imageUrl
+}, function(error) {
+  if (error) {
+    // The write failed...
+  } else {
+    // Data saved successfully!
+  }
+});
+
+//eliminar
+function toggleStar(postRef, uid) {
+  postRef.transaction(function(post) {
+    if (post) {
+      if (post.stars && post.stars[uid]) {
+        post.starCount--;
+        post.stars[uid] = null;
+      } else {
+        post.starCount++;
+        if (!post.stars) {
+          post.stars = {};
+        }
+        post.stars[uid] = true;
+      }
+    }
+    return post;
+  });
+}
+
+
+
