@@ -18,140 +18,66 @@
 </head>
 
 <body>
-    <header>WariQué?</header>
-    <!-- usuario -->
-    <div>
-      <img src="../../img/user-icon-72x72(1).png" type="image/png" sizes="72x72" href="/apple-icon-72x72.pn">
-      <p id="user-name"></p>
+  <header>WariQué?</header>
+  <!-- usuario -->
+  <div>
+    <img src="../../img/user-icon-72x72(1).png" type="image/png" sizes="72x72" href="/apple-icon-72x72.pn">
+    <p id="user-name"></p>
+  </div>
+
+  <h4>¿Qué se te antoja hoy?</h4>
+
+  <!-- ingreso de post -->
+  <div id="new-post">
+    <select name="privacy-option" id="privacy-option">
+      <option value="public">Público</option>
+      <option value="private">Privado</option>
+    </select>
+    <textarea class="form-control" id="post" rows="3"></textarea>
+    <button type="button" id="bttn-new-post" class="btn btn-danger">Publicar</button>
+  </div>
+  <hr>
+
+  <!-- el contenido que se va creando -->
+  <h4>Post</h4>
+  <hr>
+  <div id="post-container"></div>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="../../img/css/wariqué.png" width="30" height="30" class="d-inline-block align-top" alt=""> WariQué?
+    </a>
+    <!-- boton de salida -->
+    <div id="logout" class="hiden">
+      <button type="button" id="btnLogout" class="btn btn-primary btn-sm float-right" value="Logout">Salir</button>
     </div>
-  
-    <h4>¿Qué se te antoja hoy?</h4>
-  
-    <!-- ingreso de post -->
-    <div id="new-post">
-      <select name="privacy-option" id="privacy-option">
-        <option value="public">Público</option>
-        <option value="private">Privado</option>
-      </select>
-      <textarea class="form-control" id="post" rows="3"></textarea>
-      <button type="button" id="bttn-new-post" class="btn btn-danger">Publicar</button>
-    </div>
-    <hr>
-  
-    <!-- el contenido que se va creando -->
-    <h4>Post</h4>
-    <hr>
-    <div id="post-container"></div>
-    
-  <header class="header">
-    <div class="container">
-      <nav class="navbar navbar-dark navbar-custom p-0">
-        <a class="navbar-brand" href="#">
-          <img src="../../img/css/wariqué.png" width="30" height="30" class="d-inline-block align-top" alt=""> WariQué?
-        </a>
-        <!-- boton de salida -->
-        <div id="logout" class="hiden">
-          <button type="button" id="btnLogout" class="btn btn-primary btn-sm float-right" value="Logout">Salir</button>
-        </div>
-      </nav>
-    </div>
-  </header>
+  </nav>
 
   <!-- bienvenida de usuarios -->
   <div class="container">
     <!-- usuario -->
-    <div class="container">
-      <img src="/img/user-icon-72x72(1).png" type="image/png" class="icon-profile" href="/apple-icon-72x72.pn">
-      <h4 id="user-name" class="d-inline-block align-top">¡Bienvenid@!</h4>
-      <!-- <p id="user-name" class="d-inline-block align-bottom">J</p> -->
+    <div>
+      <img src="/img/user-icon-72x72(1).png" type="image/png" sizes="50x50" href="/apple-icon-72x72.pn">
+      <p id="user-name"></p>
     </div>
-
     <div>
 
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-              <img src="../../img/css/wariqué.png" width="30" height="30" class="d-inline-block align-top" alt=""> WariQué?
-            </a>
-            <!-- boton de salida -->
-            <div id="logout" class="hiden">
-              <button type="button" id="btnLogout" class="btn btn-primary btn-sm float-right" value="Logout">Salir</button>
-            </div>
-          </nav>
-        
-          <!-- bienvenida de usuarios -->
-          <div class="container">
-            <!-- usuario -->
-            <div>
-              <img src="/img/user-icon-72x72(1).png" type="image/png" sizes="50x50" href="/apple-icon-72x72.pn">
-              <p id="user-name"></p>
-            </div>
-            <div>
-        
-              <!-- Image and text -->
-              <h3>¡Bienvenido!</h3>
-        
-              <!-- ingreso de post -->
-              <div id="new-post" class="hiden">
-        
-                <textarea class="form-control control-label col-sm-4" id="post" rows="3">¿Cuál es tu recomendación?</textarea>
-                <button type="button" id="bttn-new-post" class="btn btn-danger">Publicar</button>
-                <select name="privacy-option" id="privacy-option" class="form-control col-md-2">
-                  <option value="privacidad">Privacidad</option>
-                  <option value="private">Privado</option>
-                  <option value="public">Público</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <!-- el contenido que se va creando -->
-          <div class="container">
-            <h2>Post</h2>
-            <div id="post-container" class="hiden">
-              <div class="btn-toolbar" role="toolbar">
-                <button type="button" class="btn btn-default btn-sm">
-                  <span class="glyphicon glyphicon-star"></span> Star
-                </button>
-              </div>
-            </div>
-          </div>
+      <!-- Image and text -->
+      <h3>¡Bienvenido!</h3>
 
-      <!-- ingreso de post KKKK -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5" id="firstSection">
-            <form class="border p-4 mb-4" id="form">
-              <div class="form-group" id="new-post">
-                <label>¿Qué quieres recomendar?</label>
-                <input type="text" class="form-control" id="post" placeholder="Escribe tu recomendación" />
-              </div>
-              <!-- Selector privacidad -->
-              <select name="privacy-option" id="privacy-option" class="form-control col-md-4 mb-3">
-                <option value="privacidad">Privacidad</option>
-                <option value="private">Privado</option>
-                <option value="public">Público</option>
-              </select>
-
-              <button type="submit" id="button-post" class="btn btn-primary">Publicar</button>
-              <!-- <button style="display: none" id="buttonUpdate" class="btn btn-success">Actualizar</button>
-              <button style="display: none" id="buttonCancel" class="btn btn-danger">Cancel</button> -->
-            </form>
-          </div>
-          <!-- <div class="col-md-6" id="cardSection"></div> -->
-        </div>
-      </div>
-
-      <!-- ingreso de post 
+      <!-- ingreso de post -->
       <div id="new-post" class="hiden">
+
         <textarea class="form-control control-label col-sm-4" id="post" rows="3">¿Cuál es tu recomendación?</textarea>
-        
         <button type="button" id="bttn-new-post" class="btn btn-danger">Publicar</button>
-      </div>-->
-
-
+        <select name="privacy-option" id="privacy-option" class="form-control col-md-2">
+          <option value="privacidad">Privacidad</option>
+          <option value="private">Privado</option>
+          <option value="public">Público</option>
+        </select>
+      </div>
     </div>
   </div>
-
-  <!-- el contenido que se va creando 
+  <!-- el contenido que se va creando -->
   <div class="container">
     <h2>Post</h2>
     <div id="post-container" class="hiden">
@@ -161,35 +87,6 @@
         </button>
       </div>
     </div>
-  </div>-->
-
-  <!-- opcion2 -->
-  <div class="container post">
-    <div class="row">
-      <div class="col-md-5 wall" id="wall">
-        <!-- <form class="border p-4 mb-4" id="form"> -->
-        <h5 class="card-title">Últimas actualizaciones:</h5>
-        <div class="card mb-3">
-          <div class="card-body">
-            <span>[Mario]</span>
-            <p class="card-text">Ayer probé por segunda vez las sushi donuts de @yanomami_peru y si bien la primera vez que las probé hace unos
-              meses me parecieron buenas, ahora están muuuuuucho mejores, está vez probé 3 sabores, ahorita les cuento de
-              que son:- Apaltada: pesca del día, palta, canchita (hecha polvo), togarashi y viene con su salsa acevichadas.</p>
-            <button type="submit" style="color:white" class="btn btn-warning">Editar</button>
-            <button type="submit" class="btn btn-danger">Borrar</button>
-          </div>
-        </div>
-        <!-- </form> -->
-      </div>
-      <div class="col-md-6" id="cardSection"></div>
-    </div>
-  </div>
-
-
-  <!-- Boton me gusta -->
-  <div class="pull-right like">
-    <span data-id="{{publication.id}}" class="btn-like glyphicon glyphicon-heart-empty" aria-hidden="true" data-toogle="tooltip"
-      data-placement="bottom" title="Me Gusta"></span>
   </div>
 
   <!-- footer -->
