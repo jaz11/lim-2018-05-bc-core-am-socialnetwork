@@ -1,8 +1,33 @@
 {
   "env": {
-    "browser": true
+    "browser": true,
+    "es6": true,
+    "mocha" : true
   },
   "parserOptions": {
     "ecmaVersion": 6
+  },
+  "extends": "eslint:recommended",
+  "globals":{
+    "firebase": true,
+    "emailSignUp": true,
+    "passwordSignUp": true,
+    "emailSignIn": true,
+    "passwordSignIn": true,
+    "paswordValidation": true,
+    "registerEmail": true,
+    "registerPassword": true,
+    "writeUserData": true,
+    "signUp": true,
+    "loginEmail": true,
+    "loginPassword":true,
+    "signIn": true,
+    "signInGoogle": true,
+    "signInFacebook": true,
+    "global":true,
+    "require":true,
+    "describe":true,
+    "it":true,
+    "assert":true
   }
 }

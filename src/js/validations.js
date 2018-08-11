@@ -1,8 +1,8 @@
 window.registerEmail = (email) => {
     // Una expresión regular es un objeto que describe un patrón de caracteres.
-    let regExpRegisterEmail = /^[a-zA-Z0-9_\-\.~]{2,}@[a-zA-Z0-9_\-\.~]{2,}\.[a-zA-Z]{2,4}$/
-    const result;
-    if (regExpRegisterEmail.test(emai)) {
+    let regExpRegisterEmail =new RegExp(/^[a-zA-Z0-9_\-~]{2,}@[a-zA-Z0-9_\-~]{2,}[a-zA-Z]{2,4}/)
+    let result;
+    if(regExpRegisterEmail.test(email)) {
         result = true;
     } else {
         result = false;
@@ -10,10 +10,11 @@ window.registerEmail = (email) => {
     return result;
 };
 
+
 window.registerPassword = (password) => {
 
-    let regExpRegisterPassword = /^[a-zA-ZÁáÀàÉéÈèÍíÌìÓóÒòÚúÙùÑñüÜ0-9!@#\$%\^&\*\?_~\/]{4,20}$/
-    const result;
+    let regExpRegisterPassword = new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,15}/)
+    let result;
     if (regExpRegisterPassword.test(password)) {
         result = true;
     } else {
@@ -24,8 +25,8 @@ window.registerPassword = (password) => {
 
 window.loginEmail = (email) => {
 
-    let regExpLoginEmail = /^[a-zA-Z0-9_\-\.~]{2,}@[a-zA-Z0-9_\-\.~]{2,}\.[a-zA-Z]{2,4}$/
-    const result;
+    let regExpLoginEmail =new RegExp(/^[a-zA-Z0-9_\-~]{2,}@[a-zA-Z0-9_\-~]{2,}[a-zA-Z]{2,4}/)
+    let result;
     if (regExpLoginEmail.test(email)) {
         result = true;
     } else {
@@ -36,8 +37,8 @@ window.loginEmail = (email) => {
 
 window.loginPassword = (password) => {
 
-    let regExpLoginPassword = /^[a-zA-ZÁáÀàÉéÈèÍíÌìÓóÒòÚúÙùÑñüÜ0-9!@#\$%\^&\*\?_~\/]{4,20}$/
-    const result;
+    let regExpLoginPassword =new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,15}/)
+    let result;
     if (regExpLoginPassword.test(password)) {
         result = true;
     } else {
@@ -45,51 +46,3 @@ window.loginPassword = (password) => {
     }
     return result;
 };
-
-// window.registerEmail = (emailSignUp) => {
-//     // Una expresión regular es un objeto que describe un patrón de caracteres.
-//     let regExpRegisterEmail = /^[a-zA-Z0-9_\-\.~]{2,}@[a-zA-Z0-9_\-\.~]{2,}\.[a-zA-Z]{2,4}$/
-//     const result;
-//     if (regExpRegisterEmail.test(emailSignUp)) {
-//         result = true;
-//     } else {
-//         result = false;
-//     }
-//     return result;
-// };
-
-// window.registerPassword = (passwordSignUp) => {
-
-//     let regExpRegisterPassword = /^[a-zA-ZÁáÀàÉéÈèÍíÌìÓóÒòÚúÙùÑñüÜ0-9!@#\$%\^&\*\?_~\/]{4,20}$/
-//     const result;
-//     if (regExpRegisterPassword.test(passwordSignUp)) {
-//         result = true;
-//     } else {
-//         result = false;
-//     }
-//     return result;
-// };
-
-// window.loginEmail = (emailSignIn) => {
-
-//     let regExpLoginEmail = /^[a-zA-Z0-9_\-\.~]{2,}@[a-zA-Z0-9_\-\.~]{2,}\.[a-zA-Z]{2,4}$/
-//     const result;
-//     if (regExpLoginEmail.test(emailSignIn)) {
-//         result = true;
-//     } else {
-//         result = false;
-//     }
-//     return result;
-// };
-
-// window.loginPassword = (passwordSignIn) => {
-
-//     let regExpLoginPassword = /^[a-zA-ZÁáÀàÉéÈèÍíÌìÓóÒòÚúÙùÑñüÜ0-9!@#\$%\^&\*\?_~\/]{4,20}$/
-//     const result;
-//     if (regExpLoginPassword.test(passwordSignIn)) {
-//         result = true;
-//     } else {
-//         result = false;
-//     }
-//     return result;
-// };
