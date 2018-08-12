@@ -9,41 +9,61 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
     crossorigin="anonymous">
+  <!-- iconos -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- firestore -->
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
 </head>
 
 <body>
-  <header>WariQué?</header>
-  <!-- usuario -->
-  <div>
-    <img src="../../img/user-icon-72x72(1).png" type="image/png" sizes="72x72" href="/apple-icon-72x72.pn">
-    <p id="user-name"></p>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="../../img/css/wariqué.png" width="30" height="30" class="d-inline-block align-top" alt=""> WariQué?
+    </a>
+    <!-- boton de salida -->
+    <div id="logout" class="hiden">
+      <button type="button" id="btnLogout" class="btn btn-primary btn-sm float-right" value="Logout">Salir</button>
+    </div>
+  </nav>
+
+  <!-- bienvenida de usuarios -->
+  <div class="container">
+    <!-- usuario -->
+    <div>
+      <img src="/img/user-icon-72x72(1).png" type="image/png" sizes="50x50" href="/apple-icon-72x72.pn">
+      <p id="user-name"></p>
+    </div>
+    <div>
+
+      <!-- Image and text -->
+      <h3>¡Bienvenido!</h3>
+
+      <!-- ingreso de post -->
+      <div id="new-post" class="hiden">
+
+        <textarea class="form-control control-label col-sm-4" id="post" rows="3">¿Cuál es tu recomendación?</textarea>
+        <button type="button" id="bttn-new-post" class="btn btn-danger">Publicar</button>
+        <select name="privacy-option" id="privacy-option" class="form-control col-md-2">
+          <option value="privacidad">Privacidad</option>
+          <option value="private">Privado</option>
+          <option value="public">Público</option>
+        </select>
+      </div>
+    </div>
   </div>
-
-  <h4>¿Qué se te antoja hoy?</h4>
-
-  <!-- ingreso de post -->
-  <div id="new-post">
-    <select name="privacy-option" id="privacy-option">
-      <option value="public">Público</option>
-      <option value="private">Privado</option>
-    </select>
-    <textarea class="form-control" id="post" rows="3"></textarea>
-    <button type="button" id="bttn-new-post" class="btn btn-danger">Publicar</button>
-  </div>
-  <hr>
-
   <!-- el contenido que se va creando -->
-  <h4>Post</h4>
-  <hr>
-  <div id="post-container"></div>
-
-  <!-- boton de salida -->
-  <div id="logout" class="hiden">
-    <button type="button" id="btnLogout" class="btn btn-info" value="Logout">Salir</button>
+  <div class="container">
+    <h2>Post</h2>
+    <div id="post-container" class="hiden">
+      <div class="btn-toolbar" role="toolbar">
+        <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-star"></span> Star
+        </button>
+      </div>
+    </div>
   </div>
+
 
 
 
