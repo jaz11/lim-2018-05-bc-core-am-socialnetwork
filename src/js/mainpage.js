@@ -25,7 +25,7 @@ function writeNewPost(uid, body) {
   };
 
   //obtiene una clave para un nuevo post
-  let newPostKey = firebase.database().ref().child('posts2').push().key;
+  let newPostKey = firebase.database().ref().child('posts').push().key;
 
   // Escribe los datos de los nuevos post's simultaneamente en la lista de post y la lista de user's post
   let updates = {};
@@ -36,12 +36,12 @@ function writeNewPost(uid, body) {
   return newPostKey;
 }
 
-btnSave.addEventListener('click', () => {
+btnSave.addEventListener('click', () => { 
   // verifico qué usuario se ha logueado
   let userId = firebase.auth().currentUser.uid;
 
   // escribo los post en la base de datos
-  console.log(post.value)
+  // console.log(post.value)
   const newPost = writeNewPost(userId, post.value);
 
   // postNew.innerHTML=`
@@ -52,7 +52,7 @@ btnSave.addEventListener('click', () => {
 
   // //creo el boton de actualizar
   var btnUpdate = document.createElement("input");
-  btnUpdate.setAttribute("value", "Update");
+  btnUpdate.setAttribute("value", "Edit");
   btnUpdate.setAttribute("type", "button");
 
   //creo el boton de eliminar
@@ -63,12 +63,16 @@ btnSave.addEventListener('click', () => {
   var contPost = document.createElement('div');
 
   // creo el textarea donde se publican los nuevos post
-  var textPost = document.createElement('textarea')
-  textPost.setAttribute("id", newPost);
-console.log(newPost);
-
+  var textPost = document.createElement('textarea');
+  textPost.disabled = true;
+  textPost.setAttribute("id", "new-user-post");
+// console.log(newPost);
   // le añado el valor del post
-  textPost.innerHTML = newPost;
+  let result = post.value;
+  // console.log(result);
+  textPost.innerHTML = result;
+
+   
 
   // le doy funcionalidad al botón 'eliminar'
   btnDelete.addEventListener('click', () => {
